@@ -1,0 +1,132 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: rgb(217, 6, 209);
+  background: linear-gradient(
+    180deg,
+    rgba(217, 6, 209, 1) 0%,
+    rgba(72, 12, 128, 1) 100%
+  );
+}
+
+.date {
+  display: block;
+  width: 500px;
+  text-align: center;
+  padding: 6px 16px;
+  margin: 50px auto;
+  background-color: rgb(63, 1, 63);
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form_control {
+  width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.473); */
+}
+
+.form_control p {
+  display: inline-block;
+  font-size: 22px;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  color: rgb(110, 0, 110);
+}
+
+#chbx {
+  display: inline-block;
+  margin-right: 15px;
+  transform: scale(1.1);
+}
+
+#chbx:checked + p {
+  text-decoration: line-through;
+  color: red;
+}
+
+.add_form {
+  position: relative;
+}
+
+#add_inp {
+  border: 2px solid red;
+  width: 85%;
+  display: inline-block;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(85, 85, 85);
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(110, 0, 110);
+}
+
+#add_inp::placeholder {
+  font-weight: 400;
+}
+
+#add_inp:focus {
+  outline: none;
+  border-bottom: 4px solid purple;
+  transition: all 0.1s ease-in-out;
+}
+
+#add_icon {
+  border: none;
+  right: 15px;
+  display: inline-block;
+  background-color: purple;
+  text-align: center;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#add_icon:hover {
+  background-color: rgb(68, 0, 68);
+}
+
+#add_icon span {
+  position: relative;
+  bottom: 6px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
